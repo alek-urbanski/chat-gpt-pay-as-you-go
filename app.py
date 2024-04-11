@@ -7,7 +7,7 @@ from chainlit.input_widget import Select, Switch, Slider
 
 
 api_key = os.environ.get("OPENAI_API_KEY")
-client = AsyncOpenAI(api_key)
+client = AsyncOpenAI(api_key=api_key)
 
 # Instrument the OpenAI client
 cl.instrument_openai()
